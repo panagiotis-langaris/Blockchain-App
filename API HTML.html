@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html">
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+	
+	
+	<link href='https://fonts.googleapis.com/css?family=Comfortaa:700,400&subset=greek,latin' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <script src="C:/Users/user/Desktop/Blockchain App/jquery-3.6.0.min.js"></script>
+	<script src="myJavaScript.js"></script>
+
+
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/large.css">
+
+</head>
+<body>
+
+<div class = divChain>
+	<button type="button" class="mybuttonstyle" onclick="getChainFunction()">GET the chain</button>
+
+	<button type="button" class="mybuttonstyle" onclick="getMineFunction()">Mine a new block</button>
+	
+	<div class="content">
+		<div class="container">
+		
+			<h1 class="mb-5">Ledger Table</h1>
+			
+			<div class="table-responsive">
+				<table table id="LedgerTable" class="table table-striped custom-table"></table>
+			</div>
+			
+			<div class="table-responsive">
+				<table table id="TransactionTable" class="table table-striped custom-table"></table>
+			</div>
+		</div>
+	</div>
+	
+	<form id="transactionForm" class="myform">
+        <fieldset>
+        <legend>Create a new transaction</legend>
+        <p class="parofmyform">
+                <label for="sender">Sender</label>
+                <input id="sender" type="text" name="sender" />
+        </p>
+        <p class="parofmyform">
+                <label for="recipient">Recipient</label>
+                <input id="recipient" type="text" name="recipient" />
+        </p>
+        <p class="parofmyform">
+                <label for="amount">Amount</label>
+                <input id="amount" type="text" name="amount" />
+        </p>
+        <p>
+                <input id="newTransactionButton" class="mybuttonstyle" type="button" value="POST Transaction" method="post" onclick="sendTransaction()" />
+        </p>
+        </fieldset>
+	</form>
+
+	<div id="uploadResponse"></div>
+	
+</div>
+
+
+
+	
+</body>
+
+</html>
